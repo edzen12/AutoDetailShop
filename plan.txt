@@ -1,5 +1,7 @@
 1) Регистрация, авторизация и кабинет
 2) Мультиязычность
+    django-admin makemessages -l en
+    django-admin compilemessages 
 3) Валюта
 4) Оформление корзины
 5) публикация

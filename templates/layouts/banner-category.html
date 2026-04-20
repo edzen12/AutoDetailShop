@@ -1,12 +1,13 @@
+{% load i18n %}
 <!--banner area start-->
 <div class="banner_area mb-80">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="welcome_title">
-                    <h3>WELCOME TO MAZLAY</h3>
-                    <h2>CUSTOM <span>SHOPPING STORE ONLINE</span></h2>
-                    <p>Designer Accessories. Locally Designed. Globally Crafted.</p>
+                    <h3>{% trans "ДОБРО ПОЖАЛОВАТЬ В MAZLAY" %}</h3>
+                    <h2>{% trans "ИНТЕРНЕТ-МАГАЗИН" %} <span>{% trans "ПОЛЬЗОВАТЕЛЬСКИХ ПОКУПОК" %}</span></h2>
+                    <p>{% trans "Дизайнерские аксессуары. С местным дизайном. Изготовленные по всему миру." %}</p>
                 </div>
             </div>
         </div>
@@ -14,21 +15,21 @@
             <div class="col-lg-4 col-md-4">
                 <figure class="single_banner">
                     <div class="banner_thumb">
-                        <a href="shop.html"><img src="assets/img/bg/banner1.jpg" alt=""></a>
+                        <a href="shop.html"><img src="https://www.autobak.kz/cms/uploads/images/Vse%20o%20Toyota%20Camry%2075.jpg" alt=""></a>
                     </div>
                 </figure>
             </div>
             <div class="col-lg-4 col-md-4">
                 <figure class="single_banner">
                     <div class="banner_thumb">
-                        <a href="shop.html"><img src="assets/img/bg/banner2.jpg" alt=""></a>
+                        <a href="shop.html"><img src="https://kazautorent.kz/wp-content/uploads/2024/10/image-2024-10-14-220359.jpg" alt=""></a>
                     </div>
                 </figure>
             </div>
             <div class="col-lg-4 col-md-4">
                 <figure class="single_banner">
                     <div class="banner_thumb">
-                        <a href="shop.html"><img src="assets/img/bg/banner3.jpg" alt=""></a>
+                        <a href="shop.html"><img src="https://storage.yandexcloud.net/likvi/2025/07/1642002284_4-hdpic-club-p-toiota-kamri-75-4-1024x683.jpg" alt=""></a>
                     </div>
                 </figure>
             </div>
@@ -43,71 +44,19 @@
         <div class="row">
             <div class="col-12">
                 <div class="categories_product_inner categories_column7 owl-carousel">
-            <div class="single_categories_product">
-                <div class="categories_product_thumb">
-                    <a href="shop.html"><img src="assets/img/s-product/category1.jpg" alt=""></a>
+                    {% for car in markas %}
+                    <div class="single_categories_product">
+                        <div class="categories_product_thumb">
+                            <a href="#">
+                                <img style='height:120px' src="{{car.logo.url}}">
+                            </a>
+                        </div>
+                        <div class="categories_product_content">
+                            <h4><a href="#"> {{car.name}}</a></h4>
+                        </div>
+                    </div>
+                    {% endfor %}
                 </div>
-                <div class="categories_product_content">
-                    <h4><a href="shop.html"> Body Parts</a></h4>
-                </div>
-            </div>
-            <div class="single_categories_product">
-                <div class="categories_product_thumb">
-                    <a href="shop.html"><img src="assets/img/s-product/category2.jpg" alt=""></a>
-                </div>
-                <div class="categories_product_content">
-                    <h4><a href="shop.html"> Car engine</a></h4>
-                </div>
-            </div>
-            <div class="single_categories_product">
-                <div class="categories_product_thumb">
-                    <a href="shop.html"><img src="assets/img/s-product/category3.jpg" alt=""></a>
-                </div>
-                <div class="categories_product_content">
-                    <h4><a href="shop.html"> Interiors</a></h4>
-                </div>
-            </div>
-            <div class="single_categories_product">
-                <div class="categories_product_thumb">
-                    <a href="shop.html"><img src="assets/img/s-product/category4.jpg" alt=""></a>
-                </div>
-                <div class="categories_product_content">
-                    <h4><a href="shop.html"> Lighting & lamp</a></h4>
-                </div>
-            </div>
-            <div class="single_categories_product">
-                <div class="categories_product_thumb">
-                    <a href="shop.html"><img src="assets/img/s-product/category5.jpg" alt=""></a>
-                </div>
-                <div class="categories_product_content">
-                    <h4><a href="shop.html"> Repair Parts</a></h4>
-                </div>
-            </div>
-            <div class="single_categories_product">
-                <div class="categories_product_thumb">
-                    <a href="shop.html"><img src="assets/img/s-product/category6.jpg" alt=""></a>
-                </div>
-                <div class="categories_product_content">
-                    <h4><a href="shop.html"> Smart Devices</a></h4>
-                </div>
-            </div>
-            <div class="single_categories_product">
-                <div class="categories_product_thumb">
-                    <a href="shop.html"><img src="assets/img/s-product/category7.jpg" alt=""></a>
-                </div>
-                <div class="categories_product_content">
-                    <h4><a href="shop.html"> Wheels & Tires</a></h4>
-                </div>
-            </div>
-            <div class="single_categories_product">
-                <div class="categories_product_thumb">
-                    <a href="shop.html"><img src="assets/img/s-product/category3.jpg" alt=""></a>
-                </div>
-                <div class="categories_product_content">
-                    <h4><a href="shop.html"> Smart Devices</a></h4>
-                </div>
-            </div>
-        </div>
             </div>
         </div>
     </div>
