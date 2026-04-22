@@ -1,7 +1,9 @@
 from django.contrib import admin
-from apps.product.models import *
-from mptt.admin import DraggableMPTTAdmin
 from django.utils.html import format_html
+from mptt.admin import DraggableMPTTAdmin
+from modeltranslation.admin import TranslationAdmin
+
+from apps.product.models import *
 from apps.product.models import Slider
 
 
@@ -9,9 +11,9 @@ admin.site.register(Slider)
 
 
 @admin.register(Category)
-class Category(DraggableMPTTAdmin):  
-    list_display = ('tree_actions', 'something', 'is_active')
-    list_display_links = ('something',)
+class Category(TranslationAdmin, DraggableMPTTAdmin):  
+    list_display = ('id','tree_actions', 'something', 'is_active')
+    list_display_links = ('id','something',)
     prepopulated_fields = {'slug':('name',)} 
 
     def something(self, instance):
@@ -46,7 +48,7 @@ class ProductVariantInline(admin.TabularInline):
 
 
 @admin.register(Product)
-class ProductAdmin(admin.ModelAdmin):
+class ProductAdmin(TranslationAdmin, admin.ModelAdmin):
     list_display = ('name', 'category', 'price', 'stock', 'is_available')
     list_filter = ('category', 'is_available')
     prepopulated_fields = {'slug':('name',)}

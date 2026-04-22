@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-20 19:33+0600\n"
+"POT-Creation-Date: 2026-04-22 19:22+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,6 +63,7 @@ msgid "Контакты"
 msgstr "Contacts"
 
 #: templates/includes/header.html:245 templates/includes/header.html:298
+#: templates/layouts/product.html:78
 msgid "сом"
 msgstr "som"
 
@@ -107,9 +108,46 @@ msgid "ПОЛЬЗОВАТЕЛЬСКИХ ПОКУПОК"
 msgstr "USER PURCHASES"
 
 #: templates/layouts/banner-category.html:10
-msgid ""
-"Дизайнерские аксессуары. С местным дизайном. Изготовленные по всему миру."
+msgid "Дизайнерские аксессуары. С местным дизайном. Изготовленные по всему миру."
 msgstr "Designer accessories. With a local design. Made all over the world."
+
+#: templates/layouts/blog.html:9
+msgid "Последние"
+msgstr "Latest"
+
+#: templates/layouts/blog.html:9
+msgid "записи в блоге"
+msgstr "blog entries"
+
+#: templates/layouts/blog.html:10
+msgid "Продукция Mazlay с самыми высокими скидками"
+msgstr "Mazlay products with the highest discounts"
+
+#: templates/layouts/blog.html:41
+msgid "Читать дальше"
+msgstr "Read more"
+
+#: templates/layouts/product.html:9
+msgid "Наши"
+msgstr "Our"
+
+#: templates/layouts/product.html:9
+msgid "товары"
+msgstr "products"
+
+#: templates/layouts/product.html:11
+msgid ""
+"Наша компания, занимается розничной продажей запчастей, расходных "
+"материалов, аксессуаров и комплектующих для автомобилей. В нашем "
+"ассортименте продукция ведущих европейских, корейских, японских марок, а так "
+"же большой выбор оригинальных автомобильных запчастей."
+msgstr "Our company is engaged in the retail sale of spare parts, consumables, accessories and accessories for cars. Our product range includes products from leading European, Korean, and Japanese brands, as well as a large selection of original car spare parts."
+
+#: templates/layouts/product.html:87
+#, fuzzy
+#| msgid "Посмотреть корзину"
+msgid "Добавить в корзину"
+msgstr "View cart"
 
 #: venv/lib/python3.13/site-packages/django/contrib/messages/apps.py:16
 msgid "Messages"
@@ -1375,4 +1413,59 @@ msgstr ""
 
 #: venv/lib/python3.13/site-packages/django_ckeditor_5/widgets.py:43
 msgid "Check the correct settings.CKEDITOR_5_CONFIGS "
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:14
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:94
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:102
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:112
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:122
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:126
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:158
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:177
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:406
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:411
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:421
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:441
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:458
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:477
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:483
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:500
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:512
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:520
+msgid "title"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:18
+msgid "password"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:287
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:306
+msgid "title a"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:291
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:317
+msgid "title b"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:295
+msgid "title c"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:299
+msgid "title d"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/models.py:422
+msgid "visits"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/modeltranslation/tests/translation.py:74
+msgid "Sorry, translation is not available."
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/modeltranslation/widgets.py:32
+msgid "None"
 msgstr ""

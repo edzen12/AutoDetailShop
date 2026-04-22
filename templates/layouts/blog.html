@@ -1,12 +1,13 @@
 <!--blog area start-->
+{% load i18n %}
 <div class="blog_area">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="section_title title_style2">
                     <div class="title_content">
-                        <h2><span>Latest</span>  Blog Posts</h2>
-                        <p>The highest discount products of Mazlay </p>   
+                        <h2><span>{% trans "Последние" %} </span>{% trans "записи в блоге" %} </h2>
+                        <p>{% trans "Продукция Mazlay с самыми высокими скидками" %} </p>   
                     </div>                 
                 </div>
                 </div>
@@ -36,7 +37,7 @@
                                     <p>{{post.description|truncatewords:10|safe}}</p>
                                 </div>
                                 <footer class="post_readmore">
-                                    <a href="{% url "post_detail" post.slug %}">Читать дальше</a>
+                                    <a href="{% url "post_detail" post.slug %}">{% trans "Читать дальше" %}</a>
                                 </footer>
                             </figcaption>
                         </figure>

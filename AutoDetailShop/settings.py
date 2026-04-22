@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [  
+    'modeltranslation',
     'django_ckeditor_5',
 
     'django.contrib.admin',
@@ -124,6 +125,8 @@ LANGUAGES = [
     ('ru', 'Русский'),
     ('en', 'English'),
 ]
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'ru'
 
 USE_I18N = True
 USE_L10N = True

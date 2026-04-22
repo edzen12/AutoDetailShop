@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %} 
 <!--product area start-->
 <div class="product_area">
    <div class="container">
@@ -6,9 +6,9 @@
          <div class="col-12">
             <div class="section_title">
                <h2>
-                  <span>our</span> Products
+                  <span>{% trans "Наши" %}</span> {% trans "товары" %}
                </h2>
-               <p>Gena</p>
+               <p>{% trans "Наша компания, занимается розничной продажей запчастей, расходных материалов, аксессуаров и комплектующих для автомобилей. В нашем ассортименте продукция ведущих европейских, корейских, японских марок, а так же большой выбор неоригинальных автомобильных запчастей." %}</p>
             </div>
          </div>
       </div>
@@ -75,7 +75,7 @@
                                        </ul>
                                     </div>
                                     <div class="price_box">
-                                       <span class="current_price">{{product.price}} сом</span>
+                                       <span class="current_price">{{product.price}} {% trans "сом" %}</span>
                                     </div>
                                  </div>
                                  <div class="action_links">
@@ -84,7 +84,7 @@
                                           <form action="{% url 'add_to_cart' product.id %}" method='post'> 
                                             {% csrf_token %} 
                                             <button type="submit"> 
-                                                Добавить в корзину 
+                                                {% trans "Добавить в корзину" %} 
                                             </button>
                                           </form>
                                        </li>
