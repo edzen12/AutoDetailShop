@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block content %}
 
@@ -11,8 +12,8 @@
             <div class="col-12">
                 <div class="breadcrumb_content">
                     <ul>
-                        <li><a href="{% url "home" %}">Главная</a></li>
-                        <li>Блог</li>
+                        <li><a href="{% url "home" %}">{% trans "Главная" %}</a></li>
+                        <li>{% trans "Блог" %}</li>
                     </ul>
                 </div>
             </div>
@@ -29,7 +30,7 @@
                 <div class="col-lg-9 col-md-12">
                     <div class="blog_wrapper mb-30">
                         <div class="blog_header">
-                            <h1>Блог</h1>
+                            <h1>{% trans "Блог" %}</h1>
                         </div>
                         <div class="blog_wrapper_inner">
                             {% for post in posts %}
@@ -43,10 +44,10 @@
                                         <h4 class="post_title"><a href="{% url "post_detail" post.slug %}">
                                             {{post.title}}</a></h4>
                                         <div class="blog_meta">                                        
-                                            <span class="author">Автор : 
+                                            <span class="author">{% trans "Автор" %} : 
                                                 <a href="#">{{user.username}}</a> / 
                                             </span>
-                                            <span class="meta_date">Дата:  
+                                            <span class="meta_date">{% trans "Дата" %}:  
                                                 <a href="#">{{post.created_at|date:'d M Y'}}</a>
                                             </span>
                                         </div>
@@ -54,7 +55,7 @@
                                             <p>{{post.description|safe}}</p>
                                         </div>
                                         <footer class="btn_more">
-                                            <a href="{% url "post_detail" post.slug %}"> Читать далее</a>
+                                            <a href="{% url "post_detail" post.slug %}">{% trans "Читать далее" %} </a>
                                         </footer>
                                     </figcaption>
                                 </figure>
@@ -62,19 +63,6 @@
                             {% endfor %}
                         </div>
                     </div>
-                        <!--blog pagination area start-->
-                    <div class="blog_pagination">
-                        <div class="pagination">
-                            <ul>
-                                <li class="current">1</li>
-                                <li><a href="blog.html#">2</a></li>
-                                <li><a href="blog.html#">3</a></li>
-                                <li class="next"><a href="blog.html#">next</a></li>
-                                <li><a href="blog.html#">>></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--blog pagination area end-->
                 </div>  
                 <div class="col-lg-3 col-md-12">
                     <div class="blog_sidebar_widget">

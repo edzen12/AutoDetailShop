@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-22 19:22+0600\n"
+"POT-Creation-Date: 2026-04-28 13:18+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,80 +18,137 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: templates/includes/header.html:23 templates/includes/header.html:379
+#: templates/includes/footer.html:11
+msgid "КОНТАКТНАЯ ИНФОРМАЦИЯ"
+msgstr ""
+
+#: templates/includes/footer.html:18
+msgid "Бесплатная горячая линия"
+msgstr ""
+
+#: templates/includes/footer.html:21
+msgid ""
+"Мы - команда дизайнеров и разработчиков, которые создают высококачественные "
+"HTML-шаблоны, темы для Woocommerce, Shopify."
+msgstr ""
+
+#: templates/includes/footer.html:22
+msgid "Наш адрес указан здесь"
+msgstr "Our address is listed here"
+
+#: templates/includes/footer.html:28
+msgid "следуйте за нами"
+msgstr "Follow us"
+
+#: templates/includes/footer.html:29
+msgid ""
+"Мы упрощаем консолидацию, маркетинг и отслеживание вашего веб-сайта в "
+"социальных сетях."
+msgstr ""
+"We make it easier to consolidate, market, and track your website on social "
+"media."
+
+#: templates/includes/footer.html:62
+msgid "Сделано командой"
+msgstr "Made by the team"
+
+#: templates/includes/header-other.html:20 templates/includes/header.html:23
+#: templates/includes/header.html:353
 msgid "Позвоните нам"
 msgstr "Call us"
 
-#: templates/includes/header.html:73 templates/includes/header.html:198
+#: templates/includes/header-other.html:56
+#: templates/includes/header-other.html:146 templates/includes/header.html:60
+#: templates/includes/header.html:172
 msgid "Кабинет"
 msgstr "Office"
 
-#: templates/includes/header.html:74 templates/includes/header.html:199
+#: templates/includes/header-other.html:57
+#: templates/includes/header-other.html:147 templates/includes/header.html:61
+#: templates/includes/header.html:173
 msgid "Выйти"
 msgstr "Logout"
 
-#: templates/includes/header.html:76 templates/includes/header.html:201
+#: templates/includes/header-other.html:59
+#: templates/includes/header-other.html:149 templates/includes/header.html:63
+#: templates/includes/header.html:175
 msgid "Регистрация"
 msgstr "Register"
 
-#: templates/includes/header.html:77 templates/includes/header.html:202
+#: templates/includes/header-other.html:60
+#: templates/includes/header-other.html:150 templates/includes/header.html:64
+#: templates/includes/header.html:176
 msgid "Логин"
 msgstr "Login"
 
-#: templates/includes/header.html:84 templates/includes/header.html:227
+#: templates/includes/header-other.html:67
+#: templates/includes/header-other.html:176 templates/includes/header.html:71
+#: templates/includes/header.html:201
 msgid "Поиск товара"
 msgstr "Search product"
 
-#: templates/includes/header.html:85 templates/includes/header.html:228
+#: templates/includes/header-other.html:68
+#: templates/includes/header-other.html:177 templates/includes/header.html:72
+#: templates/includes/header.html:202
 msgid "Поиск"
 msgstr "Search"
 
-#: templates/includes/header.html:92 templates/includes/header.html:360
+#: templates/includes/header-other.html:75
+#: templates/includes/header-other.html:276 templates/includes/header.html:79
+#: templates/includes/header.html:334 templates/pages/blog.html:15
 msgid "Главная"
 msgstr "Home"
 
-#: templates/includes/header.html:95 templates/includes/header.html:363
+#: templates/includes/header-other.html:78
+#: templates/includes/header-other.html:279 templates/includes/header.html:82
+#: templates/includes/header.html:337 templates/pages/blog.html:16
+#: templates/pages/blog.html:33
 msgid "Блог"
 msgstr "Blog"
 
-#: templates/includes/header.html:98 templates/includes/header.html:366
+#: templates/includes/header-other.html:81
+#: templates/includes/header-other.html:282 templates/includes/header.html:85
+#: templates/includes/header.html:340
 msgid "О нас"
 msgstr "About us"
 
-#: templates/includes/header.html:101 templates/includes/header.html:369
+#: templates/includes/header-other.html:84
+#: templates/includes/header-other.html:285 templates/includes/header.html:88
+#: templates/includes/header.html:343
 msgid "Контакты"
 msgstr "Contacts"
 
-#: templates/includes/header.html:245 templates/includes/header.html:298
-#: templates/layouts/product.html:78
+#: templates/includes/header-other.html:194
+#: templates/includes/header-other.html:247 templates/includes/header.html:219
+#: templates/includes/header.html:272 templates/layouts/product.html:78
 msgid "сом"
 msgstr "som"
 
-#: templates/includes/header.html:259
+#: templates/includes/header-other.html:208 templates/includes/header.html:233
 msgid "Корзина"
 msgstr "Cart"
 
-#: templates/includes/header.html:281
+#: templates/includes/header-other.html:230 templates/includes/header.html:255
 msgid "Кол-во"
 msgstr "Quantity"
 
-#: templates/includes/header.html:292
+#: templates/includes/header-other.html:241 templates/includes/header.html:266
 msgid "Корзина пустая"
 msgstr "Cart empty"
 
-#: templates/includes/header.html:297
+#: templates/includes/header-other.html:246 templates/includes/header.html:271
 msgid "Сумма"
 msgstr "Amount"
 
-#: templates/includes/header.html:304
+#: templates/includes/header-other.html:253 templates/includes/header.html:278
 msgid "Посмотреть корзину"
 msgstr "View cart"
 
-#: templates/includes/header.html:324
+#: templates/includes/header.html:298
 msgid "Все категории"
 msgstr "All category"
 
-#: templates/includes/header.html:350
+#: templates/includes/header.html:324
 msgid "Еще категории "
 msgstr "More category"
 
@@ -108,7 +165,8 @@ msgid "ПОЛЬЗОВАТЕЛЬСКИХ ПОКУПОК"
 msgstr "USER PURCHASES"
 
 #: templates/layouts/banner-category.html:10
-msgid "Дизайнерские аксессуары. С местным дизайном. Изготовленные по всему миру."
+msgid ""
+"Дизайнерские аксессуары. С местным дизайном. Изготовленные по всему миру."
 msgstr "Designer accessories. With a local design. Made all over the world."
 
 #: templates/layouts/blog.html:9
@@ -136,18 +194,40 @@ msgid "товары"
 msgstr "products"
 
 #: templates/layouts/product.html:11
+#, fuzzy
+#| msgid ""
+#| "Наша компания, занимается розничной продажей запчастей, расходных "
+#| "материалов, аксессуаров и комплектующих для автомобилей. В нашем "
+#| "ассортименте продукция ведущих европейских, корейских, японских марок, а "
+#| "так же большой выбор оригинальных автомобильных запчастей."
 msgid ""
 "Наша компания, занимается розничной продажей запчастей, расходных "
 "материалов, аксессуаров и комплектующих для автомобилей. В нашем "
 "ассортименте продукция ведущих европейских, корейских, японских марок, а так "
-"же большой выбор оригинальных автомобильных запчастей."
-msgstr "Our company is engaged in the retail sale of spare parts, consumables, accessories and accessories for cars. Our product range includes products from leading European, Korean, and Japanese brands, as well as a large selection of original car spare parts."
+"же большой выбор неоригинальных автомобильных запчастей."
+msgstr ""
+"Our company is engaged in the retail sale of spare parts, consumables, "
+"accessories and accessories for cars. Our product range includes products "
+"from leading European, Korean, and Japanese brands, as well as a large "
+"selection of original car spare parts."
 
 #: templates/layouts/product.html:87
 #, fuzzy
 #| msgid "Посмотреть корзину"
 msgid "Добавить в корзину"
 msgstr "View cart"
+
+#: templates/pages/blog.html:47
+msgid "Автор"
+msgstr "Author"
+
+#: templates/pages/blog.html:50
+msgid "Дата"
+msgstr "Date"
+
+#: templates/pages/blog.html:58  
+msgid "Читать далее"
+msgstr "Read more"
 
 #: venv/lib/python3.13/site-packages/django/contrib/messages/apps.py:16
 msgid "Messages"
