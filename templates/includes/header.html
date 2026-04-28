@@ -29,42 +29,27 @@
                   <ul>
                      <li class="language">
                         <a href="#">
-                              <img width='40px' src="https://cdn-icons-png.flaticon.com/512/3898/3898150.png"> 
+                              <img width='40px' src="https://di-ci.ru/images/new/unnamed%20(1).png"> 
                               {{ LANGUAGE_CODE }} 
                               <i class="ion-chevron-down"></i>
-                           </a>
+                        </a>
                         <ul class="dropdown_language">
-                           <li class='mt-1'>
+                        <li class='mt-1'>
                               <form action='{% url "set_language" %}' method='post'>
                                  {% csrf_token %}
                                  <input type='hidden' name='language' value='ru'>
-                                 <button class='btn btn-success' type='submit'>Русский</button>
+                                 <button class='btn {% if LANGUAGE_CODE == 'ru' %} btn-danger {% else %} btn-outline-danger {% endif %}' type='submit'>
+                                    Русский</button>
                               </form>
-                           </li>
-                           <li class='mt-1 mb-1'>
+                        </li>
+                        <li class='mt-1 mb-1'>
                               <form action='{% url "set_language" %}' method='post'>
                                  {% csrf_token %}
                                  <input type='hidden' name='language' value='en'>
-                                 <button class='btn btn-warning' type='submit'>English</button>
+                                 <button class='btn {% if LANGUAGE_CODE == 'en' %} btn-danger {% else %} btn-outline-danger {% endif %}' type='submit'>
+                                    English</button>
                               </form>
-                           </li>
-                        </ul>
-                     </li>
-                     <li class="currency">
-                        <a href="index.html#">USD <i class="ion-chevron-down"></i>
-                        </a>
-                        <ul class="dropdown_currency">
-                           <li>
-                              <a href="index.html#">EUR – Euro</a>
-                           </li>
-                           <li>
-                              <a href="index.html#">GBP – British Pound</a>
-                           </li>
-                           <li>
-                              <a href="index.html#">INR – India Rupee</a>
-                           </li>
-                        </ul>
-                     </li>
+                        </li>
                   </ul>
                </div>
                <div class="header_top_links">
@@ -152,42 +137,27 @@
                      <ul>
                         <li class="language">
                            <a href="#">
-                              <img width='40px' src="https://cdn-icons-png.flaticon.com/512/3898/3898150.png"> 
-                              {{ LANGUAGE_CODE }} 
-                              <i class="ion-chevron-down"></i>
+                                 <img width='40px' src="https://di-ci.ru/images/new/unnamed%20(1).png"> 
+                                 {{ LANGUAGE_CODE }} 
+                                 <i class="ion-chevron-down"></i>
                            </a>
                            <ul class="dropdown_language">
-                              <li class='mt-1'>
+                           <li class='mt-1'>
                                  <form action='{% url "set_language" %}' method='post'>
                                     {% csrf_token %}
                                     <input type='hidden' name='language' value='ru'>
-                                    <button class='btn btn-success' type='submit'>Русский</button>
+                                    <button class='btn {% if LANGUAGE_CODE == 'ru' %} btn-danger {% else %} btn-outline-danger {% endif %}' type='submit'>
+                                       Русский</button>
                                  </form>
-                              </li>
-                              <li class='mt-1 mb-1'>
+                           </li>
+                           <li class='mt-1 mb-1'>
                                  <form action='{% url "set_language" %}' method='post'>
                                     {% csrf_token %}
                                     <input type='hidden' name='language' value='en'>
-                                    <button class='btn btn-warning' type='submit'>English</button>
+                                    <button class='btn {% if LANGUAGE_CODE == 'en' %} btn-danger {% else %} btn-outline-danger {% endif %}' type='submit'>
+                                       English</button>
                                  </form>
-                              </li>
-                           </ul>
-                        </li>
-                        <li class="currency">
-                           <a href="index.html#">USD <i class="ion-chevron-down"></i>
-                           </a>
-                           <ul class="dropdown_currency">
-                              <li>
-                                 <a href="index.html#">EUR – Euro</a>
-                              </li>
-                              <li>
-                                 <a href="index.html#">GBP – British Pound</a>
-                              </li>
-                              <li>
-                                 <a href="index.html#">INR – India Rupee</a>
-                              </li>
-                           </ul>
-                        </li>
+                           </li>
                      </ul>
                   </div>
                </div>
@@ -214,8 +184,8 @@
             <div class="row align-items-center">
                <div class="col-lg-2 col-md-4 col-sm-4 col-4">
                   <div class="logo">
-                     <a href="index.html">
-                        <img src="assets/img/logo/logo.png" alt="">
+                     <a href="{% url "home" %}">
+                        <img width='150px' src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Django_Unchained_logo.svg/3840px-Django_Unchained_logo.svg.png" alt="">
                      </a>
                   </div>
                </div>
